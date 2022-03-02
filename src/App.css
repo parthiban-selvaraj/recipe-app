@@ -1,5 +1,5 @@
 body {
-  background:#f3f3f3;
+  background: #f3f3f3;
 }
 
 img {
@@ -47,7 +47,7 @@ button:focus {
   background: #fff;
   padding-bottom: 2rem;
   border-radius: 5px;
-  box-shadow: -1px 2px 34px -13px rgba(0,0,0,0.75);
+  box-shadow: -1px 2px 34px -13px rgba(0, 0, 0, 0.75);
   text-align: left;
   overflow: hidden;
 }
@@ -77,14 +77,43 @@ button:focus {
   letter-spacing: 1px;
 }
 
-.form__input {
+form {
+  width: 100%;
+}
+
+.form_input {
   background: transparent;
   border: 0;
   border-bottom: solid 2px #2c3e50;
-  margin-right: 10px;
+  /* margin-right: 10px; */
   letter-spacing: 2px;
-  width: 10%;
-  padding: 0.4rem;
+  /* padding: 0.4rem; */
+}
+
+ul {
+  width: 11.5rem;
+  /* margin-right: 30px; */
+  list-style-type: none;
+  background: transparent;
+  border: 0;
+  /* padding: 0.4rem; */
+  padding: 0;
+  margin: auto;
+  /* border-bottom: solid 2px #2c3e50; 
+  border-right: solid 2px #2c3e50;
+  border-left: solid 2px #2c3e50; */
+  outline: none;
+  text-align: left;
+  border-bottom: 10px;
+}
+
+li {
+  cursor: pointer;
+}
+
+li:hover {
+  text-decoration: underline;
+  background-color: rgba(128, 128, 128, 0.20);
 }
 
 .form__button {
@@ -99,7 +128,7 @@ button:focus {
   margin-left: 0.7rem;
 }
 
-input[type="text"] { 
+input[type="text"] {
   outline: none;
 }
 
@@ -125,7 +154,8 @@ input:-webkit-autofill {
   margin: 1rem 0;
 }
 
-.active-recipe__publisher, .active-recipe__website {
+.active-recipe__publisher,
+.active-recipe__website {
   text-transform: uppercase;
   font-size: 1.2rem;
   margin-bottom: 1rem;
